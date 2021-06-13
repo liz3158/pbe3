@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="gallery.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css'><link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <br>
+        <h1>Planet Restaurant</h1>
+
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="keypeople.html">Our Staff</a>
+            <a href="location.html">Location</a>
+            <a href="registrationpage.html">Join Us</a>
+            <div class="animation start-home"></div>
+        </nav>
+
+        <br>
+        <br>
+
+       <!-- The grid: four columns -->
+       <table class="width">
+        <div class="row">
+            <div class="column">
+            <img src="img/sweet1.jpg" alt="Blueberry Nature" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="img/sweet24.jpg" alt="colorful macaron" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="img/sweet25.jpg" alt="chocolate ball" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+            <img src="img/sweet26.jpg" alt="serving sweets " onclick="myFunction(this);">
+            </div>
+        </div>
+       </table>
+       
+        
+        <!-- The expanding image container -->
+        <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%" align="center">
+        
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <script>
+            function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+}
+
+        </script>
+
+        <br>
+        <br>
+        <br>
+
+        <p align="center"><font color="aliceblue" size="60px" style="text-shadow: 60px;font-family:Georgia, 'Times New Roman', Times, serif; background-color: darkslategrey;" >THE GALLERY WALL</font></p>
+
+        <table class="size"  >
+            <tr>
+                <td>
+                    <div class="picture">
+                        <img src="img/sweet2.jpg" width="350px" height="450px">
+                        <img src="img/sweet3.jpg" width="350px" height="450px">
+                        <img src="img/sweet4.jpg" width="350px" height="450px">
+                        <img src="img/sweet5.jpg" width="350px" height="450px">
+                        <img src="img/sweet6.jpg" width="350px" height="450px">
+                        <img src="img/sweet7.jpg" width="350px" height="450px">
+                        <img src="img/sweet8.jpg" width="350px" height="450px">
+                        <img src="img/sweet9.jpg" width="350px" height="450px">
+                        <img src="img/sweet10.jpg" width="350px" height="450px">
+                        <img src="img/sweet11.jpg" width="350px" height="450px">
+                        <img src="img/sweet12.jpg" width="350px" height="450px">
+                        <img src="img/sweet13.jpg" width="350px" height="450px">
+                        <img src="img/sweet14.jpg" width="350px" height="450px">
+                        <img src="img/sweet15.jpg" width="350px" height="450px">
+                        <img src="img/sweet16.jpg" width="350px" height="450px">
+                        <img src="img/sweet17.jpg" width="350px" height="450px">
+                        <img src="img/sweet18.jpg" width="350px" height="450px">
+                        <img src="img/sweet19.jpg" width="350px" height="450px">
+                        <img src="img/sweet20.jpg" width="350px" height="450px">
+                        <img src="img/sweet21.jpg" width="350px" height="450px">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        
+        <footer>
+            <p class="footer">By Liz Wong Wan Qi</p>
+        </footer>
+
+        
+
+    </body>
+</html>
